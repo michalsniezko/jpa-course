@@ -1,6 +1,5 @@
 package com.michalsniezko.jpa_course.models;
 
-import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;

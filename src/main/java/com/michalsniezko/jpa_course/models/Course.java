@@ -1,7 +1,10 @@
 package com.michalsniezko.jpa_course.models;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import java.util.List;
@@ -12,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @SuperBuilder
 @Entity
-public class Course  extends BaseEntity{
+public class Course extends BaseEntity {
     private String title;
 
     private String description;

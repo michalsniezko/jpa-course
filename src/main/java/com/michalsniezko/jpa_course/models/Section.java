@@ -1,7 +1,13 @@
 package com.michalsniezko.jpa_course.models;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 import java.util.List;
@@ -12,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 @SuperBuilder
 @Entity
-public class Section extends BaseEntity{
+public class Section extends BaseEntity {
     private String name;
 
     private int position;
